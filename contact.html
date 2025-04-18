@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BlitzHub</title>
+  <link rel="stylesheet" href="/contact.css">
+</head>
+<body>
+  <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+  </div>
+
+  <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </nav>
+  <div class="container">
+    <!-- Grid Layout -->
+    <div class="grid">
+      <!-- Contact Information Section -->
+      <div class="grid-item">
+        <h1>Get in Touch</h1>
+        <p>
+          Do you have questions, feedback, or inquiries? We’d love to hear from you. Reach out to us using any of the methods below or through the contact form.
+        </p>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:+233593565378">+233 59 356 5378</a></li>
+          <li><strong>Email:</strong> <a href="mailto:blitzhubghana@gmail.com">blitzhubghana@gmail.com</a></li>
+        </ul>
+        <p>
+          You can also visit us during our office hours:
+        </p>
+        <ul>
+          <li><strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM</li>
+          <li><strong>Location:</strong> Accra, Ghana</li>
+        </ul>
+        <p>
+          We typically respond to inquiries within 24-48 hours. Thank you for reaching out!
+        </p>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="grid-item2">
+        <!-- Added id="contactForm" to the form element to target it in JavaScript -->
+        <form class="contact-form" id="contactForm" action="#" method="post">
+          <h2>Send Us a Message</h2>
+          
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+      
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+
+
+
+  <footer>
+    <p>© 2025 BlitzHub GH. All rights reserved.</p>
+  </footer>
+  <script src="/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    z-index: 4;
+}
+a:visited {
+    color: black;
+    z-index: 4;
+}
+a:hover {
+    color: #6F86FF;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+#google-form {
+  width: auto;
+  height: 3600px; /* Adjust this value as needed */
+  border: none;
+  display: block;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* off-screen-menu */
+.off-screen-menu {
+    background-color: whitesmoke;
+    height: 35vh;
+    width: 50%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: left;
+    font-size: 1.3rem;
+    transition: .3s ease;
+    border-radius: 10px;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15); 
+    z-index: 4;
+    margin-right: 15px;
+}
+
+.off-screen-menu a {
+    color: black;
+}
+
+
+
+.off-screen-menu a:visited {
+    color: black;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    z-index: 4;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: black;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.order-hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .order-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* subtle dark background for readability */
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .overlay-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .overlay-text p {
+    font-size: 1rem;
+  }
+  
+  .order-form-section {
+    width: 100vw;
+    padding: 1rem 1rem;
+  }
+  
+  .order-form-section iframe {
+    width: 100vw;
+    height: 80vh;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  *body {
+    overflow-x: hidden;
+  }
+
+  .payment-section {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .payment-section input,
+  .payment-section button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .pay-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .payment-section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .payment-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .pay-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .pay-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Loader Overlay */
+  .loader-overlay {
+    display: none; /* Correctly hides the loader initially */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+/* Spinner */
+.loader-spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #007bff; /* Blue color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  
