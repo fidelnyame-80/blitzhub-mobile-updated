@@ -31,8 +31,8 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
     };
   
     try {
-      // Use the new Google Apps Script Web App URL
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxk8i1TJSb911tCz66tiH0fJZT2WFEY259zLQvfDAS5FmryO1io3LKHlLzkpXjS7PwwDw/exec', {
+      // Use your new proxy server endpoint
+      const response = await fetch('http://localhost:3000', { // Replace with your proxy server URL
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
@@ -51,4 +51,4 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
       console.error('Error submitting form:', error); // Debugging: Log error
       alert('An error occurred. Please try again.');
     }
-  });
+});
