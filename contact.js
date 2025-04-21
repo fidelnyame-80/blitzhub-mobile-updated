@@ -32,7 +32,7 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
   
     try {
       // Use the new Google Apps Script Web App URL
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwij1_4OYwAmBtUZL6M-SUm7z-rOeWcCvPYcT8t5KJVdvzI0hx3fDYnt2BQB8WKU254wQ/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxk8i1TJSb911tCz66tiH0fJZT2WFEY259zLQvfDAS5FmryO1io3LKHlLzkpXjS7PwwDw/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
