@@ -32,7 +32,7 @@ document.getElementById('contactForm').addEventListener('submit', async (event) 
   
     try {
       // Use your new proxy server endpoint
-      const response = await fetch('http://localhost:3000', { // Replace with your proxy server URL
+      const response = await fetch('https://blitzhub-chi.vercel.app/', { // Replace with your proxy server URL
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
