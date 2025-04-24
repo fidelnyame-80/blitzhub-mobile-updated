@@ -1,0 +1,13 @@
+{
+  "name": "serverless-contact-form",
+  "version": "1.0.0",
+  "main": "sendForm.js",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "author": "fidelnyame-80",
+  "license": "MIT"
+}
