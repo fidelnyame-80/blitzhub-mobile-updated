@@ -2,20 +2,20 @@
   "name": "blitzhub-mobile-updated",
   "version": "1.0.0",
   "description": "A serverless contact form and website project for BlitzHub",
-  "main": "api/sendForm.js", // Entry point for backend logic
+  "main": "api/sendForm.js", 
   "dependencies": {
-    "node-fetch": "^3.3.1" // Used for making HTTP requests, if needed
+    "node-fetch": "^3.3.1" 
   },
   "devDependencies": {
-    "nodemon": "^2.0.21" // For local development to auto-restart the server
+    "nodemon": "^2.0.21" 
   },
   "scripts": {
-    "start": "vercel dev", // Start the Vercel development environment
-    "dev": "nodemon api/sendForm.js", // Optional: Run the project locally without Vercel
+    "start": "vercel dev", 
+    "dev": "nodemon api/sendForm.js", 
     "build": "echo 'No build step required for this project'"
   },
   "engines": {
-    "node": ">=14.0.0" // Ensure compatibility with the Node.js runtime
+    "node": ">=14.0.0" 
   },
   "author": "fidelnyame-80",
   "license": "MIT"
